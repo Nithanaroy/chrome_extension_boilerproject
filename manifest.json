@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+
+	"name": "Protein Tracker",
+	"description": "Tracks the protiens you consume",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "View status",
+		"default_popup": "popup.html"
+	},
+
+	"options_page": "options.html",
+
+	"background": {
+		"scripts": ["eventsPage.js"],
+		"persistant": false
+	},
+
+	"permissions": [
+		"storage",
+		"notifications",
+		"contextMenus"
+	]
+}
